@@ -1,0 +1,14 @@
+FÍSICA:
+1o - Aristóteles
+2o - Platão
+3o - Sócrates
+
+QUÍMICA:
+1o - Sócrates
+2o - Aristóteles
+3o - Platão
+
+MATEMÁTICA:
+1o - Platão
+2o - Sócrates
+3o - Aristóteles
