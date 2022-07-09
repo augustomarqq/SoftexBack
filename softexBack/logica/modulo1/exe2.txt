@@ -1,1 +1,4 @@
-A fazer...
+A lógica que ele utilizou para descobrir o aluno que havia mudado de lugar foi a seguinte: 
+- Ele dividia as linhas e colunas com 4 alunos que gostavam de uma disciplina e 2 alunos que gostavam da outra.
+- Assim sendo, ao voltar para a sala após 5 minutos, ele percebeu que havia uma linha e coluna específicas que haviam 3 de cada, diferente de antes.
+- Sendo capaz então de determinar exatamente qual o aluno havia sido trocado.
