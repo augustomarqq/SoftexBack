@@ -1,0 +1,50 @@
+algoritmo "Cadastro"
+var
+nome, endereco, cidade, nomePai, nomeMae: caractere
+cpf, rg, idade: inteiro
+peso, rendaBruta: real
+
+inicio
+
+escreva ("Qual o seu nome? ")
+leia (nome)
+LimpaTela
+escreva ("Qual o seu endereço? ")
+leia (endereco)
+LimpaTela
+escreva ("Qual o nome da sua cidade? ")
+leia (cidade)
+LimpaTela
+escreva ("Qual o seu CPF? ")
+leia (cpf)
+LimpaTela
+escreva ("Qual o seu RG? ")
+leia (rg)
+LimpaTela
+escreva ("Qual a sua idade? ")
+leia (idade)
+LimpaTela
+escreva ("Qual o nome do seu pai? ")
+leia (nomePai)
+LimpaTela
+escreva ("Qual o nome da sua mãe? ")
+leia (nomeMae)
+LimpaTela
+escreva ("Qual o seu peso? ")
+leia (peso)
+LimpaTela
+escreva ("Qual é a sua renda bruta? ")
+leia (rendaBruta)
+LimpaTela
+escreval ("Nome:", nome)
+escreval ("Endereço:", endereco)
+escreval ("Cidade:", cidade)
+escreval ("CPF:", cpf)
+escreval ("RG:", rg)
+escreval ("Idade:", idade)
+escreval ("Nome do Pai:", nomePai)
+escreval ("Nome da Mãe:", nomeMae)
+escreval ("Peso:", peso, "kg")
+escreval ("Renda Bruta: R$", rendaBruta)
+
+fimAlgoritmo
