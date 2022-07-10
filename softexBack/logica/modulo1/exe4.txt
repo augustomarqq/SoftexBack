@@ -1,8 +1,8 @@
 algoritmo "Cadastro"
 var
 nome, endereco, cidade, nomePai, nomeMae: caractere
-cpf, rg, idade: inteiro
-peso, rendaBruta: real
+rg, idade: inteiro
+cpf, peso, rendaBruta: real
 
 inicio
 
@@ -47,4 +47,4 @@ escreval ("Nome da Mãe:", nomeMae)
 escreval ("Peso:", peso, "kg")
 escreval ("Renda Bruta: R$", rendaBruta)
 
-fimAlgoritmo
+fimalgoritmo
