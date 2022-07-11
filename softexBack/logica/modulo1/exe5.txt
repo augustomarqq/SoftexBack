@@ -1,0 +1,137 @@
+algoritmo "adivinhaTransporte"
+var
+   terrestre, aereo, aquatico, capacete, umaPessoa, pesado, trilho, pista, carroceria, veiculo, cobrador, alto, pular, devagar, piloto, aviao, helicoptero, submerso, navega, vela, motor, descoberto: caractere
+inicio
+      Escreva("É terrestre? ")
+      Leia(terrestre)
+      se (terrestre = "sim") entao
+         Escreva ("Usa capacete? ")
+         leia (capacete)
+              se (capacete = "sim") entao
+              Escreva ("Seu transporte é moto")
+              senao
+                   Escreva ("Cabe apenas uma pessoa? ")
+                   leia (umaPessoa)
+                        se (umaPessoa = "sim") entao
+                        Escreva ("É pesado? ")
+                        leia (pesado)
+                             se (pesado = "sim") entao
+                             Escreva ("Seu transporte é o trator")
+                             senao
+                                  Escreva ("Seu transporte é a bicicleta")
+                             fimSe
+                        senao
+                             se (umaPessoa = "não") entao
+                             escreva ("Usa trilho? ")
+                             leia (trilho)
+                                  se (trilho = "sim") entao
+                                  escreva ("Seu transporte é o trem")
+                                  senao
+                                          se (trilho = "não") entao
+                                          escreva ("Anda na pista? ")
+                                          leia (pista)
+                                               se (pista = "sim") entao
+                                               escreva ("É alto? ")
+                                               leia (alto)
+                                                    se (alto = "sim") entao
+                                                    escreva ("Tem carroceria? ")
+                                                    leia (carroceria)
+                                                            se (carroceria = "sim") entao
+                                                            escreva ("Seu transporte é o caminhão")
+                                                            senao
+                                                            escreva ("Pode ter cobrador? ")
+                                                            leia (cobrador)
+                                                                    se (cobrador = "sim") entao
+                                                                    escreva ("Seu transporte é o ônibus")
+                                                                    fimSe
+                                                            fimSe
+                                                    senao
+                                                         se (alto = "não") entao
+                                                         escreva ("É veículo leve? ")
+                                                         leia (veiculo)
+                                                              se (veiculo = "sim") entao
+                                                              escreva ("Seu transporte é um carro")
+                                                              fimSe
+                                                         fimSe
+                                                    fimSe
+                                               fimSe
+                                          fimSe
+                                     fimSe
+                             fimSe
+                        fimSe
+              fimSe
+      fimSe
+      
+      se (terrestre = "não") entao
+           Escreva ("É aéreo? ")
+           leia (aereo)
+      fimSe
+
+      se (aereo = "sim") entao
+      Escreva ("Precisa pular? ")
+      leia (pular)
+           se (pular = "sim") entao
+           Escreva ("Seu transporte é asa delta")
+           senao
+                Escreva ("É devagar? ")
+                leia (devagar)
+                     se (devagar = "sim") entao
+                     Escreva ("Seu transporte é o balão")
+                     senao
+                          Escreva ("Tem piloto? ")
+                          leia (piloto)
+                               se (piloto = "sim") entao
+                               escreva ("Possui asas fixas? ")
+                               leia (aviao)
+                                    se (aviao = "sim") entao
+                                    Escreva ("Seu transporte é o avião")
+                                    senao
+                                         Escreva ("Seu transporte é o helicóptero")
+                                         
+                                    fimSe
+                               fimSe
+                     fimSe
+           fimSe
+
+      senao
+      se (aereo = "não") entao
+           Escreva ("É aquático? ")
+           leia (aquatico)
+      fimSe
+
+      se (aquatico = "sim") entao
+      Escreva ("É submerso? ")
+      leia (submerso)
+           se (submerso = "sim") entao
+           Escreva ("Seu transporte é o submarino")
+           senao
+                escreva ("Navega na água? ")
+                leia (navega)
+                     se (navega = "sim") entao
+                        escreva ("Possui vela? ")
+                        leia (vela)
+                             se (vela = "sim") entao
+                             escreva ("Seu transporte é barco")
+                             senao
+                                  escreva ("Tem motor? ")
+                                  leia (motor)
+                                       se (motor = "sim") entao
+                                       escreva ("É alto? ")
+                                       leia (alto)
+                                            se (alto = "sim") entao
+                                            Escreva ("Seu transporte é um navio")
+                                            senao
+                                                 escreva ("Pode ser descoberto? ")
+                                                 leia (descoberto)
+                                                      se (descoberto = "sim") entao
+                                                      escreva ("Seu transporte é uma lancha")
+                                                      fimSe
+                                                 fimSe
+                                            fimSe
+                                       fimSe
+                                  fimSe
+                             fimSe
+                     fimSe
+
+ fimSe
+fimalgoritmo
