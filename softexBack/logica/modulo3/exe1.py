@@ -1,4 +1,4 @@
-"""Exercício 1"""
+"""Exercício 1 - Aluno Aprovado ou Reprovado"""
 
 nome = input("Digite o nome do aluno: ")
 faltas = int(input("Digite o número de faltas do aluno: "))
