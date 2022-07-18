@@ -9,7 +9,7 @@ def calculadora (num1, num2, operacao):
     elif operacao == 3:
         multiplicacao = num1 * num2
         return multiplicacao
-    elif operacao == 4:
+    elif operacao == 4 and num2 != 0:
         divisao = num1 / num2
         return divisao
     else:
