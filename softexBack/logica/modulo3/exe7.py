@@ -63,9 +63,11 @@ while True:
                     if votosBolsonaro > votosLula and votosBolsonaro > votosCiro:
                         print(f'O presidente eleito foi Bolsonaro com o total de {votosBolsonaro} votos \n')
                     elif votosLula > votosBolsonaro and votosLula > votosCiro:
-                        print(f'O presidente eleito foi Lula com {votosLula} votos \n')
+                        print(f'O presidente eleito foi Lula com o total de {votosLula} votos \n')
                     elif votosCiro > votosLula and votosCiro > votosBolsonaro:
-                        print(f'O presidente eleito foi Ciro com {votosCiro} votos \n')
+                        print(f'O presidente eleito foi Ciro com o total de {votosCiro} votos \n')
+                    elif votosCiro == votosLula and votosCiro > votosBolsonaro and votosLula > votosBolsonaro:
+                        print('Votação será decidida no segundo turno!')
                     else:
                         pass
                     
@@ -81,8 +83,7 @@ while True:
                     os.system('cls')
                     continue
                 else:
-                    pass
-                
+                    pass                
     except:
         os.system('cls')
         print('\n Digite apenas números para escolher o seu candidato. \n Por favor, vote novamente! \n')
