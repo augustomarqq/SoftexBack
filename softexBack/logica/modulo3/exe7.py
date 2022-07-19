@@ -1,7 +1,7 @@
 from rich import print
 import os
 
-# Constantes
+# Contadores
 votosBolsonaro = 0
 votosCiro = 0
 votosLula = 0
