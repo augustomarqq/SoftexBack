@@ -61,13 +61,15 @@ while True:
                     os.system('cls')
                     print('VOTAÇÃO FINALIZADA! \n')
                     if votosBolsonaro > votosLula and votosBolsonaro > votosCiro:
-                        print(f'O presidente eleito foi Bolsonaro com {votosBolsonaro} votos \n')
+                        print(f'O presidente eleito foi Bolsonaro com o total de {votosBolsonaro} votos \n')
                     elif votosLula > votosBolsonaro and votosLula > votosCiro:
                         print(f'O presidente eleito foi Lula com {votosLula} votos \n')
                     elif votosCiro > votosLula and votosCiro > votosBolsonaro:
                         print(f'O presidente eleito foi Ciro com {votosCiro} votos \n')
                     else:
                         pass
+                    
+                    # Resultado
                     print("NÚMERO TOTAL DE VOTOS: \n")
                     print(f'[on green]Bolsonaro:[/] {votosBolsonaro}')
                     print(f'[on blue]Ciro:[/] {votosCiro}')
