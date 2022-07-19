@@ -34,11 +34,17 @@ while True:
                 os.system('cls')
                 print('VOTAÇÃO FINALIZADA! \n')
                 if votosBolsonaro > votosLula and votosBolsonaro > votosCiro:
-                    print(f'O presidente eleito foi Bolsonaro com {votosBolsonaro} votos \n')
+                    print(f'O presidente eleito foi Bolsonaro com o total de {votosBolsonaro} votos \n')
                 elif votosLula > votosBolsonaro and votosLula > votosCiro:
-                    print(f'O presidente eleito foi Lula com {votosLula} votos \n')
+                    print(f'O presidente eleito foi Lula com o total de {votosLula} votos \n')
                 elif votosCiro > votosLula and votosCiro > votosBolsonaro:
-                    print(f'O presidente eleito foi Ciro com {votosCiro} votos \n')
+                    print(f'O presidente eleito foi Ciro com o total de {votosCiro} votos \n')
+                elif votosCiro == votosLula and votosCiro > votosBolsonaro and votosLula > votosBolsonaro:
+                    print('A votação será decidida no segundo turno entre Ciro e Lula! \n')
+                elif votosBolsonaro == votosLula and votosBolsonaro > votosCiro and votosLula > votosCiro:
+                    print('A votação será decidida no segundo turno entre Bolsonaro e Lula! \n')
+                elif votosBolsonaro == votosCiro and votosBolsonaro > votosLula and votosCiro > votosLula:
+                    print('A votação será decidida no segundo turno entre Bolsonaro e Ciro! \n')
                 else:
                     pass
                 print("NÚMERO TOTAL DE VOTOS: \n")
@@ -67,7 +73,11 @@ while True:
                     elif votosCiro > votosLula and votosCiro > votosBolsonaro:
                         print(f'O presidente eleito foi Ciro com o total de {votosCiro} votos \n')
                     elif votosCiro == votosLula and votosCiro > votosBolsonaro and votosLula > votosBolsonaro:
-                        print('Votação será decidida no segundo turno!')
+                        print('A votação será decidida no segundo turno entre Ciro e Lula!')
+                    elif votosBolsonaro == votosLula and votosBolsonaro > votosCiro and votosLula > votosCiro:
+                        print('A votação será decidida no segundo turno entre Bolsonaro e Lula!')
+                    elif votosBolsonaro == votosCiro and votosBolsonaro > votosLula and votosCiro > votosLula:
+                        print('A votação será decidida no segundo turno entre Bolsonaro e Ciro!')
                     else:
                         pass
                     
