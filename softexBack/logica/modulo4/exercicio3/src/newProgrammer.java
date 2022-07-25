@@ -1,11 +1,12 @@
 public class newProgrammer {
     public static void main(String[] args) {
-        Programador newDev = new Programador();
-        newDev.nome = "Augusto Allan";
-        newDev.setIdade(26);
-        newDev.tecnologias = "Javascript e Node.js";
+        Programador newDev = new Programador("Augusto Allan", "Javascript/Node.js", 26); 
+        newDev.sobre(); 
         newDev.status();
-        
-        System.out.println("\n" + newDev.nome + " desenvolve em " + newDev.tecnologias + " e tem " + newDev.getIdade() + " anos");
+        System.out.println("\n" + newDev.nome + " desenvolve em " + newDev.tecnologias + " e tem " + newDev.getIdade() + " anos \n");
+
+        Programador newDev2 = new Programador("Rodrigo Lima", "Java/Spring", 28);
+        newDev2.status();        
+        System.out.println("\n" + newDev2.nome + " desenvolve em " + newDev2.tecnologias + " e tem " + newDev2.getIdade() + " anos");
     }
 }
