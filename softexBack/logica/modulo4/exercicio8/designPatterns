@@ -1,0 +1,101 @@
+//Escolha e descreva um Padrão de Projetos
+
+"COMMAND" - Também conhecido como Comando, Ação, Action, Transação, Transaction;
+
+Transforma o pedido em um objeto independente que contém toda a informação sobre o pedido.
+Essa Transformação permite que você parametrize métodos com diferentes pedidos, atrase ou
+coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.
+ 
+"COMANDOS DE USO:"
+O padrão Command é bastante comum no código Java. Na maioria das vezes, é
+usado como uma alternativa para retornos de chamada para parametrizar elementos da interface
+do usuário com ações. Também é usado para tarefas de enfileiramento, rastreamento de histórico
+de operações etc.
+
+"Aqui estão alguns exemplos do padrão Command nas principais bibliotecas Java:"
+- Todas as implementações de java.lang.Runnable
+- Todas as implementações de javax.swing.Action
+
+"IDENTIFICAÇÃO:"
+O padrão Command é reconhecível por métodos comportamentais em um tipo abstrato/interface
+(remetente) que chama um método em uma implementação de um tipo abstrato/interface diferente (destinatário)
+que foi encapsulado pela implementação do comando durante a sua criação. As classes do Command geralmente
+são limitadas a ações específicas.
+
+"COMANDOS DO EDITOR DE TEXTO E DESFAZER:"
+O editor de texto neste exemplo cria novos objetos comando sempre que um usuário interage com ele. Após executar
+suas ações, um comando é enviado para a pilha do histórico.
+
+Agora, para executar a operação desfazer, o aplicativo obtém o último comando executado do histórico e executa uma
+ação inversa ou restaura o estado passado do editor, salvo por esse comando.
+
+"***commands/CopyCommand.java: Copiar texto selecionado para a área de transferência***"
+
+package refactoring_guru.command.example.commands;
+
+import refactoring_guru.command.example.editor.Editor;
+
+public class CopyCommand extends Command {
+
+    public CopyCommand(Editor editor) {
+        super(editor);
+    }
+
+    @Override
+    public boolean execute() {
+        editor.clipboard = editor.textField.getSelectedText();
+        return false;
+    }
+}
+
+"***commands/PasteCommand.java: Colar texto da área de transferência***"
+
+package refactoring_guru.command.example.commands;
+
+import refactoring_guru.command.example.editor.Editor;
+
+public class PasteCommand extends Command {
+
+    public PasteCommand(Editor editor) {
+        super(editor);
+    }
+
+    @Override
+    public boolean execute() {
+        if (editor.clipboard == null || editor.clipboard.isEmpty()) return false;
+
+        backup();
+        editor.textField.insert(editor.clipboard, editor.textField.getCaretPosition());
+        return true;
+    }
+}
+
+"***commands/CutCommand.java: Cortar texto para a área de transferência***"
+
+package refactoring_guru.command.example.commands;
+
+import refactoring_guru.command.example.editor.Editor;
+
+public class CutCommand extends Command {
+
+    public CutCommand(Editor editor) {
+        super(editor);
+    }
+
+    @Override
+    public boolean execute() {
+        if (editor.textField.getSelectedText().isEmpty()) return false;
+
+        backup();
+        String source = editor.textField.getText();
+        editor.clipboard = editor.textField.getSelectedText();
+        editor.textField.setText(cutString(source));
+        return true;
+    }
+
+    private String cutString(String source) {
+        String start = source.substring(0, editor.textField.getSelectionStart());
+        String end = source.substring(editor.textField.getSelectionEnd());
+        return start + end;
+    }
+}
