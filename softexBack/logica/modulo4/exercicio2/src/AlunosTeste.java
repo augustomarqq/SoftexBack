@@ -1,12 +1,8 @@
 public class AlunosTeste extends SoftexAlunos{
     public static void main(String[] args) {
-
-        //instanciando o objeto
-        SoftexAlunos aluno1 = new SoftexAlunos();
-        SoftexAlunos aluno2 = new SoftexAlunos();
-        SoftexAlunos aluno3 = new SoftexAlunos();
         
         //declarando objeto 1
+        SoftexAlunos aluno1 = new SoftexAlunos();
         aluno1.nome = "Augusto";
         aluno1.curso = "Back-End";
         totalAlunos = alunos++;
@@ -15,6 +11,7 @@ public class AlunosTeste extends SoftexAlunos{
         System.out.println("O total de alunos agora é: " + alunos);
 
          //declarando objeto 2
+         SoftexAlunos aluno2 = new SoftexAlunos();
          aluno2.nome = "Camilla";
          aluno2.curso = "Front-End";
          totalAlunos = alunos++;
@@ -23,6 +20,7 @@ public class AlunosTeste extends SoftexAlunos{
          System.out.println("O total de alunos agora é: " + alunos);
 
          //declarando objeto 3
+         SoftexAlunos aluno3 = new SoftexAlunos();
          aluno3.nome = "Guilherme";
          aluno3.curso = "Back-End";
          totalAlunos = alunos++;
