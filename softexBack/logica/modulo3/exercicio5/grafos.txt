@@ -1,0 +1,25 @@
+Atividade 5
+
+GRAFOS
+
+    A teoria dos grafos* é um assunto antigo, porém com várias aplicações em nosso dia-a-dia.
+    Foi introduzida no século XVIII pelo matemático suiço Leonhard Euler, que utilizou grafos
+    para resolver o problema que conhecemos como As sete pontes de Königsberg.
+
+    * Ramo da matemática que estuda as relações entre os objetos de um determinado conjunto.
+
+AFINAL, O QUE SÃO GRAFOS?
+    
+    É uma estrutura composta por um conjunto (não vazio) de pontos (vértices) e um conjunto
+    de linhas que ligam esses pontos (arestas).
+
+    <img>https://miro.medium.com/max/1328/1*mdRR7l3MtuFUiR4Ak5NUJQ.png</img>
+    Exemplo de Grafo com 3 vértices {0, 1, 2} e 3 arestas {a, b, c}
+
+EXEMPLOS DE GRAFOS
+    
+    ***objetos = nós // relacionamento = arestas***
+    
+    - Web (Objeto: páginas da web // Relacionamento: link de uma página para outra)
+    - Robustez da malha elétrica (Objeto: torres de transmissão, Relacionamento: linhas entre torres)
+
