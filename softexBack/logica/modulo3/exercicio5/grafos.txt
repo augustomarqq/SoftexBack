@@ -15,7 +15,7 @@ AFINAL, O QUE SÃO GRAFOS?
 
     <img>https://miro.medium.com/max/1328/1*mdRR7l3MtuFUiR4Ak5NUJQ.png</img>
     Exemplo de Grafo com 3 vértices {0, 1, 2} e 3 arestas {a, b, c}
-
+    
 EXEMPLOS DE GRAFOS
     
     ***objetos = nós // relacionamento = arestas***
