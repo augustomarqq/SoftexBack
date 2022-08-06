@@ -1,0 +1,41 @@
+PADRÕES DE PROJETO
+    
+    Um padrão é uma solução reutilizável que pode ser aplicada nos problemas que frequentemente ocorrem nos projetos de software - no nosso caso - escrevendo aplicações
+    web JavaScript. Outro meio de olhar para os padrões são como modelos de como nós podemos resolver problemas - sendo alguns possíveis de serem aplicados em diferentes
+    situações.
+
+
+PORQUE ENTENDER OS PADRÕES E SE TORNAR FAMILIAR COM ELES É IMPORTANTE? OS PADRÕES DE PROJETO TEM 3 PRINCIPAIS BENEFÍCIOS:
+
+    1. Padrões são soluções comprovadas: Eles fornecem abordagens para solucionar questões no desenvolvimento de software usando
+    técnicas comprovadas que refletem a experiência e conhecimento dos desenvolvedores que ajudaram a definí-lo e torná-lo um padrão.
+
+    2. Padrões podem ser facilmente reutilizados: Um padrão usualmente reflete em uma solução "out of the box" (fora da caixa, além do comum)
+    que pode ser adaptada para atender as nossas próprias necessidades. Essa característica faz com que os padrões sejam muito robustos.
+
+    3. Padrões podem ser expressivos: Quando nós olhamos para um padrão, ele geralmente é um conjunto de estruturas e vocabulários
+    para a apresentação de uma solução que pode nos ajudar a expressar soluções extensas de uma forma muito elegante.
+
+
+FACTORY METHOD
+
+    É um padrão criacional e um dos patterns mais úteis em todos os casos, porque é simples de implementar e de entender e também porque
+    permite que limpemos um pouco o nosso código e transformemos em algo mais reutilizável.
+
+    Basicamente, todos os padrões do tipo factory permitem que você centralize a lógica de criação de objetos em uma única classe “fabrica”
+    (por isso factory). Essa lógica de criação de objetos pode ser, por exemplo, uma pré configuração ou então até mesmo escolher entre o
+    polimorfismo de classes diferentes para saber qual objeto criar no momento e por que.
+
+CASOS DE USO
+
+    Generalizando em algo mais útil para nós, podemos considerar o uso do Factory Method em uma forma de tratar a criação de objetos de erro.
+    
+    Por exemplo: Imagina que tenhamos uma API que precise retornar erros diferentes baseados em classes diferentes de acordo com a mensagem
+    do usuário e o tipo de retorno que vamos ter.
+
+    Se tivermos uma API simples, com 3 endpoints, e cada endpoint puder retornar até 3 erros, vamos ter 9 linhas do tipo:
+        if (err) return res.json({code: 000, message: 'Error message'})
+
+    E a primeira regra da programação é nunca escrever a mesma linha mais de uma vez. Se precisássemos modificar o nosso objeto de erros
+    teríamos que passar por todos os casos novamente um a um. Quando podemos simplesmente ter alguma coisa do tipo:
+        if (err) return res.json(ErrorFactory.getError(err))
