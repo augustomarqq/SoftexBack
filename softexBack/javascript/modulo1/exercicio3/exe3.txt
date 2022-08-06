@@ -1,0 +1,28 @@
+Exemplos de Dados utilizados no cotidiano:
+
+1. CONTROLE REMOTO
+    Apertamos o botão de aumentar volume (entregamos um dado), dado esse que é transformado em um dado binário, enviado ao LED do controle, que por sua vez envia
+    ao aparelho escolhido uma série de pulsos de luz que correspondem ao comando binário "aumentar volume".
+
+2. CONTA DE ENERGIA
+    Através da conta de energia, estamos recebendo os dados detalhados do consumo de energia elétrica no intervalo de 1 mês em nossa residência. Dados esses que servem
+    para calcular o preço a ser pago pelo consumo em questão.
+
+3. CALCULADORA
+    Na calculadora, conseguimos tanto enviar como receber dados. No caso, digitamos os valores e a operação que desejamos utilizar para fazer algum cálculo (entregamos dados), 
+    e em contrapartida, com base nos valores informados, a calculadora nos retorna um resultado (recebemos o dado/resposta).
+
+
+Exemplos de Dados utilizados na internet:
+
+1. LOCALIZAÇÃO
+    Ao autorizar o compartilhamento da nossa localização em apps ou aparelhos, estamos disponibilizando o envio de nossos dados e permitindo que a empresa responsável pelo
+    app/aparelho em questão tenha acesso à nossa localização exata através do GPS.
+
+2. COOKIES
+    Através dos cookies, sites e empresas conseguem personalizar anúncios de acordo com o nosso histórico de pesquisa e navegação, interesse em determinados conteúdos, etc.
+    Além disso, com os cookies é possível salvar informações pessoais pré-definidas como nome/endereço/telefone para preenchimento de formulários e logins.
+
+3. DOWNLOAD DE UM FILME
+    Com o uso de programas como o qbittorrent, podemos fazer o download (onde recebemos um dado) de diversos arquivos na internet. No caso de filmes, podemos receber os dados
+    em diversos formatos como: mp4, avi, wmv, mov e mkv.
