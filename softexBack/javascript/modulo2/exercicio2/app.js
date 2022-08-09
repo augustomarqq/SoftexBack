@@ -1,4 +1,4 @@
-import { somar, subtrair , multiplicar, dividir } from "./funcoes.js";
+import { somar, subtrair , multiplicar , dividir } from "./funcoes.js";
 import readlineSync from "readline-sync";
 
 var num1 = readlineSync.questionFloat("Valor 1: ");
