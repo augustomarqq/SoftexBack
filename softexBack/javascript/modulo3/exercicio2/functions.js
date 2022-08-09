@@ -23,21 +23,17 @@ while(true) {
     var op = rl.question("Escolha a operacao a ser realizada:\n[+]\n[-]\n[*]\n[/]\n ");
 
     if (op == "+") {        
-        somar(n1, n2);
-        console.log("O resultado da soma entre "+ n1 +" e "+ n2 +" é = "+ (n1 + n2));
+        console.log("O resultado da soma entre "+ n1 +" e "+ n2 +" é = "+ somar(n1, n2));
         break;       
-    } else if (op == "-") {
-        subtrair(n1, n2);
-        console.log("O resultado da subtração entre "+ n1 +" e "+ n2 +" é = "+ (n1 - n2));
+    } else if (op == "-") {        
+        console.log("O resultado da subtração entre "+ n1 +" e "+ n2 +" é = "+ subtrair(n1, n2));
         break;   
-    } else if (op == "*") {
-        multiplicar(n1, n2);
-        console.log("O resultado da multiplicação entre "+ n1 +" e "+ n2 +" é = "+ (n1 * n2));
+    } else if (op == "*") {        
+        console.log("O resultado da multiplicação entre "+ n1 +" e "+ n2 +" é = "+ multiplicar(n1, n2));
         break;
-    } else if (op == "/") {
-        dividir(n1, n2)
+    } else if (op == "/") {        
         if (n1%n2 == 0)
-            console.log("O resultado da divisão entre "+ n1 +" e "+ n2 +" é = "+ (n1 / n2));
+            console.log("O resultado da divisão entre "+ n1 +" e "+ n2 +" é = "+ dividir(n1, n2));
         else
             return printaResto(n1, n2);
             break;
