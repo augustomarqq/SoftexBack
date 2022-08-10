@@ -1,3 +1,6 @@
+import readlineSync from "readline-sync";
+const rl = readlineSync;
+
 function Banco(conta, saldo, tipoConta, agencia) {
     this.conta = conta;
     this.saldo = saldo;
@@ -5,26 +8,31 @@ function Banco(conta, saldo, tipoConta, agencia) {
     this.agencia = agencia;
 
     this.saldoAtual = function() {
-        return this.saldo = saldo;
+        return this.saldo;
     }
 
     this.deposito = function(a) {
-        saldo += a
+        this.saldo += a
     }
 
     this.saque = function(a) {
-        saldo -= a
+        this.saldo -= a
     }
 
     this.numConta = function(){
-        return this.conta = conta;       
+        return this.conta;       
     }
 
 }
 
-var bancoInter = new Banco ("829747-9", 10000, "corrente", "001")
+var bancoInter = new Banco (undefined, undefined, undefined, undefined)
 
-console.log("Numero da conta: "+ bancoInter.numConta())
+bancoInter.conta = rl.question("Digite o numero da sua conta: ")
+bancoInter.saldo = rl.questionFloat("Digite o valor do seu saldo: ")
+bancoInter.tipoConta = rl.question("Digite o tipo da sua conta: ")
+bancoInter.agencia = rl.question("Digite o numero da sua agencia: ")
+
+console.log("\nNumero da conta: "+ bancoInter.numConta())
 console.log("Tipo da conta: "+ bancoInter.tipoConta)
 console.log("Agencia: "+ bancoInter.agencia)
 console.log("Saldo: "+ bancoInter.saldo)
