@@ -4,8 +4,8 @@ var express = require('express');
 
 const app = express();
 
-app.listen(8082, () => {
-  console.log("Servidor de pé em http://localhost:8082")
+app.listen(8084, () => {
+  console.log("Servidor de pé em http://localhost:8084")
   console.log("Para desligar o servidor: ctrl + c")
 });
 
