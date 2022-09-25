@@ -1,0 +1,69 @@
+SISTEMAS DE BANCOS DE DADOS RELACIONAIS:
+
+    Oracle:
+        É um dos mais utilizados atualmente nas aplicações corporativas. Utiliza a linguagem
+        PL/SQL (que nada mais é do que uma extensão do SQL) e sua principal função é acelerar
+        o tratamento e a persistência dos dados. É seguro, confiável, robusto e um software
+        de alta qualidade.
+
+
+    MySQL:
+        É muito popular e usado principalmente na internet. Atende tanto a projetos simples
+        como complexos e utiliza a linguagem SQL para acessar e gerenciar o conteúdo armazenado
+        em si. Além disso, possui tanto licença paga como gratuita. É usado por grandes empresas
+        como NASA, Bradesco, Youtube.
+
+
+    SQL Server:
+        É um SGBD criado e mantido pela Microsoft, sendo bastante robusto e capaz de atender uma
+        demanda de negócios dos mais simples aos mais complexos, com grandes volumes de dados.
+        Vale salientar ainda que utiliza a aplicação de inteligência artificial, proporcionando
+        detecções mais certeiras de tendências e comportamentos por meio de dados.
+    
+
+    PostgreSQL:
+        É um SGBD open source (código aberto), onde as suas consultas SQL são executadas pela
+        linguagem PSQL. Suporta grande parte do padrão SQL e oferece muitos recursos como
+        consultas complexas, chaves estrangeiras (FKs), triggers (gatilhos), visualizações
+        atualizáveis, integridade transicional, controle multiversão e muito mais.
+
+    Firebird:
+        Mais um de código aberto, que atende tanto clientes como servidores. Tem compatibilidade
+        com o padrão SQL-92 e funciona em mais de dez sistemas operacionais diferentes (somando 
+        todas as versões disponíveis). Foi desenvolvido a partir do código-fonte do interbase 6.
+
+    
+    MariaDB:
+        Foi construído pelos mesmos desenvolvedores do MySQL e se tornou muito popular. É mais um
+        de código aberto e sua grande diferença pro MySQL é o fato de ele possuir uma Licença GPL
+        ou Licença de Software Livre, enquanto que o MySQL possui dupla licença (paga e gratuita).
+
+
+BANCOS DE DADOS NÃO RELACIONAIS:
+
+    MongoDB
+        Diferente dos bancos de dados relacionais, ele é orientado à documentos e armazena os seus
+        registros sem nenhuma preocupação com a estrutura dos dados. É considerado portanto, como
+        um banco de dados NoSQL, já que seus dados não são armazenados em tabelas, como é o caso
+        dos bancos de dados relacionais. Ainda assim, é um banco de dados de código aberto com
+        alta performance e é aceito em diferentes sistemas operacionais.
+    
+    Redis:
+        O Redis é o banco de dados NoSQL de chave-valor mais utilizado em todo o mundo. Ele vincula
+        um valor a uma chave na sua estrutura, o que facilita o armazenamento e a busca desses dados.
+        Por isso, é muito utilizado pelos desenvolvedores.
+
+    Cassandra:
+        Este banco de dados NoSQL foi desenvolvido no Facebook. Ele usa um banco de dados descentralizado,
+        em que os dados são armazenados em vários datacenters. Ele é otimizado para cluster e fornece baixa
+        latência em suas atualizações.
+
+    Hbase:
+        O Hbase é um banco de dados que utiliza conjunto de linhas e colunas para armazenar as informações.
+        Ele é utilizado em diferentes plataformas como o LinkedIn, Facebook e Spotify
+    
+    Amazon DynamoDB:
+        Este é um banco de dados NoSQL em nuvem, disponibilizado pela Amazon Web Service. Ele tem baixa latência,
+        é rápido e flexível, sendo o modelo ideal para aplicações móveis, jogos na web e soluções com internet das
+        coisas. Ele ainda apresenta alto desempenho e escalabilidade automática, características imprescindíveis
+        para negócios que precisam crescer com eficiência.
