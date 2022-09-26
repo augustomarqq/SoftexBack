@@ -1,0 +1,21 @@
+### TERCEIRO EXERCÍCIO ###
+
+1. Inclua a coluna DATA_NASCIMENTO na tabela ALUNO do tipo string e de tamanho 10 caracteres;
+
+    USE biblioteca_escola;
+    ALTER TABLE aluno ADD COLUMN data_nascimento varchar(10) AFTER matricula NOT NULL;
+
+2. Altere a coluna TELEFONE para CONTATO e seu tipo de dado para string;
+
+    USE biblioteca_escola;
+    ALTER TABLE aluno CHANGE COLUMN telefone contato varchar(20);
+
+3. Inclua o campo ISBN na tabela LIVRO, com tamanho de 13 caracteres do tipo inteiro; 
+
+    USE biblioteca_escola;
+    ALTER TABLE livro ADD COLUMN ISBN int(13);
+
+4. E remova o campo ISBN da tabela LIVRO.
+
+    USE biblioteca_escola;
+    ALTER TABLE livro DROP COLUMN ISBN;
